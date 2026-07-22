@@ -14,7 +14,7 @@ export const HeroNav: React.FC<HeroNavProps> = ({
   brandName = 'Andhra ISP',
   brandTag = 'NETWORK',
   onSearchClick,
-  onLoginClick,
+  onLoginClick = () => (window.location.href = '#auth-showcase'),
   className = '',
 }) => {
   return (
@@ -41,25 +41,25 @@ export const HeroNav: React.FC<HeroNavProps> = ({
         {/* Primary Desktop Nav Links */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-300">
           <a
-            href="/ap/districts"
+            href="#districts"
             className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
           >
             Districts
           </a>
           <a
-            href="/isps"
+            href="#smart-search"
             className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
           >
             ISPs
           </a>
           <a
-            href="/compare"
+            href="#highlights"
             className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
           >
             Compare
           </a>
           <a
-            href="/ap/explorer"
+            href="#explorer"
             className="inline-flex items-center gap-1.5 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
           >
             <span>Map Explorer</span>
