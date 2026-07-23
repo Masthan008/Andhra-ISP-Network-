@@ -1,5 +1,5 @@
 # ANDHRA ISP NETWORK 🌐
-### *Connecting Every Corner of Andhra Pradesh*
+### *Connecting Every Corner of Andhra Pradesh — and Beyond*
 
 [![Production Status](https://img.shields.io/badge/status-production--ready-brightgreen.svg?style=for-the-badge)](https://github.com/Masthan008/Andhra-ISP-Network-)
 [![React Version](https://img.shields.io/badge/React-18.3.1-blue.svg?style=for-the-badge&logo=react)](https://react.dev/)
@@ -36,7 +36,7 @@ By bridging citizens, local internet service providers (LCOs/MSOs), state infras
 
 ## 📚 Master Architecture Specifications Index
 
-The repository houses **32 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, and operational workflow:
+The repository houses **35 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, and operational workflow:
 
 | # | Master Specification Document | Classification & Focus Area |
 |---|---|---|
@@ -72,6 +72,9 @@ The repository houses **32 exhaustive enterprise architecture masterpieces** det
 | 30 | [Master Operations Intelligence & BI](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_OPERATIONS_INTELLIGENCE_BI_ANALYTICS_ARCHITECTURE.md) | Executive BI Dashboards, K-Anonymity Privacy & PDF Reports |
 | 31 | [Master Enterprise Administration](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_ADMIN_ISP_OPERATIONS_WORKFLOW_ARCHITECTURE.md) | Multi-Level Approvals, 26 District Hierarchy, Task SLAs & SOPs |
 | 32 | [Master Quality Engineering & Testing](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_QUALITY_ENGINEERING_TESTING_VALIDATION_ARCHITECTURE.md) | 10 Mandatory Quality Gates, Playwright E2E & k6 Load Tests |
+| 33 | [Master Release Engineering & CI/CD](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_RELEASE_ENGINEERING_CICD_DEPLOYMENT_ARCHITECTURE.md) | Trunk-Based Git, Cosign OCI Signing, Blue/Green & Canary |
+| 34 | [Master Platform Evolution & Future Strategy](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_PLATFORM_EVOLUTION_SCALABILITY_FUTURE_ARCHITECTURE.md) | 5-Year Roadmap, India National Expansion & FinOps |
+| 35 | [Master Digital Transformation Architecture](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_DIGITAL_TRANSFORMATION_TECHNOLOGY_GOVERNANCE_ARCHITECTURE.md) | Enterprise Operating Model, 5-Level Maturity & ARB Governance |
 
 ---
 
@@ -160,7 +163,7 @@ Andhra-ISP-Network/
 │       ├── package.json                    # Web workspace dependencies
 │       ├── tsconfig.json                   # TypeScript configuration
 │       └── vite.config.ts                  # Vite engine build configuration
-├── ANDHRA_ISP_NETWORK_*.md                 # 32 Architecture Masterpiece Specifications
+├── ANDHRA_ISP_NETWORK_*.md                 # 35 Architecture Masterpiece Specifications
 ├── package.json                            # Root Monorepo configuration
 └── README.md                               # Platform Master README Documentation
 ```
