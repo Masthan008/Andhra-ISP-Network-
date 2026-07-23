@@ -36,7 +36,7 @@ By bridging citizens, local internet service providers (LCOs/MSOs), state infras
 
 ## 📚 Master Architecture Specifications Index
 
-The repository houses **43 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, operational workflow, 10-year strategic roadmap, disaster recovery framework, incident response governance, documentation-as-code platform, learning architecture, FinOps cloud sustainability, Digital Twin decision intelligence, and Innovation Lab R&D platform:
+The repository houses **44 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, operational workflow, 10-year strategic roadmap, disaster recovery framework, incident response governance, documentation-as-code platform, learning architecture, FinOps cloud sustainability, Digital Twin decision intelligence, Innovation Lab R&D platform, and corporate governance compliance:
 
 | # | Master Specification Document | Classification & Focus Area |
 |---|---|---|
@@ -83,6 +83,7 @@ The repository houses **43 exhaustive enterprise architecture masterpieces** det
 | 41 | [Master Platform Optimization, FinOps & Sustainability](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_PLATFORM_OPTIMIZATION_FINOPS_SUSTAINABILITY_ARCHITECTURE.md) | FinOps Inform-Optimize-Operate, PUE < 1.2, Carbon Scheduling |
 | 42 | [Master Data Intelligence & Digital Twin](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_DATA_INTELLIGENCE_DIGITAL_TWIN_ARCHITECTURE.md) | 8 Domains, Digital Twin (26 District Replica), Knowledge Graph |
 | 43 | [Master Platform Modernization & Innovation Lab](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_PLATFORM_MODERNIZATION_INNOVATION_LAB_ARCHITECTURE.md) | Innovation Lab, 11-Stage Lifecycle, Tech Radar & Wasm/PQC |
+| 44 | [Master Governance, Audit & Compliance](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_GOVERNANCE_AUDIT_COMPLIANCE_ARCHITECTURE.md) | 9 Committees, 3-Tier Controls, WORM Vaults & DPDP 2023 |
 
 ---
 
@@ -171,7 +172,7 @@ Andhra-ISP-Network/
 │       ├── package.json                    # Web workspace dependencies
 │       ├── tsconfig.json                   # TypeScript configuration
 │       └── vite.config.ts                  # Vite engine build configuration
-├── ANDHRA_ISP_NETWORK_*.md                 # 43 Architecture Masterpiece Specifications
+├── ANDHRA_ISP_NETWORK_*.md                 # 44 Architecture Masterpiece Specifications
 ├── package.json                            # Root Monorepo configuration
 └── README.md                               # Platform Master README Documentation
 ```
