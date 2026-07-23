@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { XCircle } from 'lucide-react';
 
 export const Section3Problem: React.FC = () => {
   const problems = [
@@ -54,7 +55,7 @@ export const Section3Problem: React.FC = () => {
               className="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 shadow-sm"
             >
               <div className="w-8 h-8 rounded-full bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 flex items-center justify-center font-bold text-sm mb-4">
-                ✕
+                <XCircle className="w-5 h-5 text-rose-500" />
               </div>
               <h3 className="text-lg font-semibold text-zinc-950 dark:text-zinc-50">
                 {prob.title}

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { Zap, ArrowUp } from 'lucide-react';
 
 export const EnterpriseFooter: React.FC = () => {
   const scrollToTop = () => {
@@ -16,11 +17,11 @@ export const EnterpriseFooter: React.FC = () => {
           <div className="col-span-2 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-7 h-7 rounded-lg bg-zinc-950 dark:bg-zinc-50 flex items-center justify-center text-white dark:text-zinc-950 font-bold text-xs">
-                  ⚡
+                <div className="w-7 h-7 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 font-bold text-xs">
+                  <Zap className="w-4 h-4 fill-cyan-400" />
                 </div>
                 <span className="text-base font-bold tracking-tight">
-                  Andhra ISP <span className="text-[10px] font-mono text-zinc-500 uppercase">NETWORK</span>
+                  Andhra ISP <span className="text-[10px] font-mono text-cyan-400 uppercase">NETWORK</span>
                 </span>
               </div>
               <p className="text-xs text-zinc-500 max-w-sm leading-relaxed">
@@ -45,11 +46,11 @@ export const EnterpriseFooter: React.FC = () => {
               Districts
             </h4>
             <ul className="space-y-2.5 text-xs text-zinc-600 dark:text-zinc-400 font-medium">
-              <li><a href="/ap/visakhapatnam" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">Visakhapatnam</a></li>
-              <li><a href="/ap/ntr-vijayawada" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">NTR Vijayawada</a></li>
-              <li><a href="/ap/guntur" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">Guntur</a></li>
-              <li><a href="/ap/tirupati" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">Tirupati</a></li>
-              <li><a href="/ap/districts" className="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">All 26 Districts ➔</a></li>
+              <li><a href="#districts" className="hover:text-cyan-400 transition-colors">Visakhapatnam</a></li>
+              <li><a href="#districts" className="hover:text-cyan-400 transition-colors">NTR Vijayawada</a></li>
+              <li><a href="#districts" className="hover:text-cyan-400 transition-colors">Guntur</a></li>
+              <li><a href="#districts" className="hover:text-cyan-400 transition-colors">Tirupati</a></li>
+              <li><a href="#districts" className="text-cyan-400 font-semibold hover:underline">All 26 Districts ➔</a></li>
             </ul>
           </div>
 
@@ -59,11 +60,11 @@ export const EnterpriseFooter: React.FC = () => {
               Providers
             </h4>
             <ul className="space-y-2.5 text-xs text-zinc-600 dark:text-zinc-400 font-medium">
-              <li><a href="/isps/act-fibernet" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">ACT Fibernet</a></li>
-              <li><a href="/isps/jiofiber" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">JioFiber</a></li>
-              <li><a href="/isps/airtel-xstream" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">Airtel Xstream</a></li>
-              <li><a href="/isps/apsfl" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">APSFL Fiber</a></li>
-              <li><a href="/isps/bsnl-bharat-fiber" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">BSNL Bharat Fiber</a></li>
+              <li><a href="#smart-search" className="hover:text-cyan-400 transition-colors">ACT Fibernet</a></li>
+              <li><a href="#smart-search" className="hover:text-cyan-400 transition-colors">JioFiber</a></li>
+              <li><a href="#smart-search" className="hover:text-cyan-400 transition-colors">Airtel Xstream</a></li>
+              <li><a href="#smart-search" className="hover:text-cyan-400 transition-colors">APSFL Fiber</a></li>
+              <li><a href="#smart-search" className="hover:text-cyan-400 transition-colors">BSNL Bharat Fiber</a></li>
             </ul>
           </div>
 
@@ -73,11 +74,11 @@ export const EnterpriseFooter: React.FC = () => {
               Platform
             </h4>
             <ul className="space-y-2.5 text-xs text-zinc-600 dark:text-zinc-400 font-medium">
-              <li><a href="#explorer" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">Map Explorer</a></li>
-              <li><a href="#smart-search" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">Smart Search</a></li>
-              <li><a href="/compare" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">ISP Comparison</a></li>
-              <li><a href="/about" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">About Us</a></li>
-              <li><a href="/privacy" className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">Privacy Policy</a></li>
+              <li><a href="#explorer" className="hover:text-cyan-400 transition-colors">Map Explorer</a></li>
+              <li><a href="#smart-search" className="hover:text-cyan-400 transition-colors">Smart Search</a></li>
+              <li><a href="#highlights" className="hover:text-cyan-400 transition-colors">ISP Comparison</a></li>
+              <li><a href="#highlights" className="hover:text-cyan-400 transition-colors">About Us</a></li>
+              <li><a href="#highlights" className="hover:text-cyan-400 transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
@@ -92,7 +93,7 @@ export const EnterpriseFooter: React.FC = () => {
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300 font-medium transition-colors"
           >
             <span>Back to top</span>
-            <span>↑</span>
+            <ArrowUp className="w-3.5 h-3.5" />
           </button>
         </div>
       </div>

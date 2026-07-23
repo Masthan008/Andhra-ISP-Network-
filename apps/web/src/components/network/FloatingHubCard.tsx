@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { X } from 'lucide-react';
 import { NetworkHubNode } from './networkData';
 
 interface FloatingHubCardProps {
@@ -18,7 +19,7 @@ export const FloatingHubCard: React.FC<FloatingHubCardProps> = ({
     <div className="absolute bottom-16 right-6 z-40 w-full max-w-xs p-5 rounded-2xl bg-white/95 dark:bg-zinc-900/95 backdrop-blur-2xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-2xl transition-all animate-in fade-in duration-200">
       <div className="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-3">
         <div>
-          <span className="text-[9px] font-mono font-semibold tracking-wider text-emerald-600 dark:text-emerald-400 uppercase">
+          <span className="text-[9px] font-mono font-semibold tracking-wider text-cyan-400 uppercase">
             REGIONAL EXCHANGE HUB
           </span>
           <h4 className="text-base font-bold text-zinc-950 dark:text-zinc-50">
@@ -29,9 +30,9 @@ export const FloatingHubCard: React.FC<FloatingHubCardProps> = ({
         <button
           type="button"
           onClick={onClose}
-          className="w-7 h-7 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-xs text-zinc-500 font-bold hover:bg-zinc-200 transition-colors"
+          className="w-7 h-7 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-xs text-zinc-500 hover:bg-zinc-200 transition-colors"
         >
-          ✕
+          <X className="w-3.5 h-3.5" />
         </button>
       </div>
 

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { ArrowRight, Globe } from 'lucide-react';
 
 export const SectionClosingCTA: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ export const SectionClosingCTA: React.FC = () => {
       id="closing-cta"
       className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center flex flex-col items-center gap-6"
     >
-      <span className="text-xs font-mono font-semibold tracking-wider text-emerald-600 dark:text-emerald-400 uppercase px-3.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-900">
+      <span className="text-xs font-mono font-semibold tracking-wider text-cyan-400 uppercase px-3.5 py-1.5 rounded-full bg-slate-900 border border-cyan-500/20">
         SECTION 10 — CONNECTING ANDHRA PRADESH
       </span>
 
@@ -26,7 +27,8 @@ export const SectionClosingCTA: React.FC = () => {
           onClick={() => (window.location.href = '#smart-search')}
           className="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-14 px-8 rounded-2xl bg-zinc-950 hover:bg-zinc-800 dark:bg-zinc-50 dark:hover:bg-zinc-200 text-zinc-50 dark:text-zinc-950 font-medium text-sm transition-all shadow-lg active:scale-95"
         >
-          <span>Search Providers ➔</span>
+          <span>Search Providers</span>
+          <ArrowRight className="w-4 h-4" />
         </button>
 
         <button
@@ -34,7 +36,8 @@ export const SectionClosingCTA: React.FC = () => {
           onClick={() => (window.location.href = '#explorer')}
           className="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-14 px-8 rounded-2xl bg-white hover:bg-zinc-50 dark:bg-zinc-900 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 font-medium text-sm transition-all shadow-sm active:scale-95"
         >
-          <span>Explore AP Map 🌐</span>
+          <span>Explore AP Map</span>
+          <Globe className="w-4 h-4 text-cyan-400" />
         </button>
       </div>
     </section>

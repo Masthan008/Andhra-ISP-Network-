@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { Zap, Search } from 'lucide-react';
 
 interface HeroNavProps {
   brandName?: string;
@@ -13,7 +14,10 @@ interface HeroNavProps {
 export const HeroNav: React.FC<HeroNavProps> = ({
   brandName = 'Andhra ISP',
   brandTag = 'NETWORK',
-  onSearchClick,
+  onSearchClick = () => {
+    const input = document.querySelector<HTMLInputElement>('input[placeholder*="Search by District"]');
+    input?.focus();
+  },
   onLoginClick = () => (window.location.href = '#auth-showcase'),
   className = '',
 }) => {
@@ -25,14 +29,14 @@ export const HeroNav: React.FC<HeroNavProps> = ({
       <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
         <a href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-zinc-950 dark:bg-zinc-50 flex items-center justify-center text-white dark:text-zinc-950 font-bold text-sm shadow-sm group-hover:scale-105 transition-transform">
-            ⚡
+          <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 font-bold text-sm shadow-sm group-hover:scale-105 transition-transform">
+            <Zap className="w-4 h-4 fill-cyan-400" />
           </div>
           <div className="flex items-baseline gap-1.5">
             <span className="text-base font-bold tracking-tight text-zinc-950 dark:text-zinc-50">
               {brandName}
             </span>
-            <span className="text-[10px] font-mono font-semibold tracking-wider px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 uppercase">
+            <span className="text-[10px] font-mono font-semibold tracking-wider px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-cyan-500 dark:text-cyan-400 uppercase">
               {brandTag}
             </span>
           </div>
@@ -42,28 +46,28 @@ export const HeroNav: React.FC<HeroNavProps> = ({
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-300">
           <a
             href="#districts"
-            className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
+            className="hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
           >
             Districts
           </a>
           <a
             href="#smart-search"
-            className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
+            className="hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
           >
             ISPs
           </a>
           <a
             href="#highlights"
-            className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
+            className="hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
           >
             Compare
           </a>
           <a
             href="#explorer"
-            className="inline-flex items-center gap-1.5 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
+            className="inline-flex items-center gap-1.5 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
           >
             <span>Map Explorer</span>
-            <span className="flex h-1.5 w-1.5 rounded-full bg-blue-600"></span>
+            <span className="flex h-1.5 w-1.5 rounded-full bg-cyan-400 animate-ping"></span>
           </a>
         </nav>
 
@@ -74,19 +78,7 @@ export const HeroNav: React.FC<HeroNavProps> = ({
             onClick={onSearchClick}
             className="hidden sm:inline-flex items-center gap-2 h-9 px-3 rounded-lg bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 text-xs text-zinc-500 dark:text-zinc-400 font-medium transition-colors border border-zinc-200/60 dark:border-zinc-800/60"
           >
-            <svg
-              className="w-3.5 h-3.5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
+            <Search className="w-3.5 h-3.5" />
             <span>Search</span>
             <kbd className="font-mono text-[10px] bg-white dark:bg-zinc-800 px-1 py-0.5 rounded border border-zinc-200 dark:border-zinc-700">
               ⌘K

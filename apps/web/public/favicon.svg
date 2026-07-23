@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Container -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  <rect width="500" height="500" x="6" y="6" rx="122" fill="none" stroke="#38bdf8" stroke-width="3" stroke-opacity="0.3" />
+
+  <!-- Outer Pulse Rings -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#06b6d4" stroke-width="2" stroke-dasharray="12 12" stroke-opacity="0.5" />
+  <circle cx="256" cy="256" r="110" fill="none" stroke="#3b82f6" stroke-width="3" stroke-opacity="0.7" />
+
+  <!-- Fiber Network Signal Lines -->
+  <path d="M 256 96 L 256 416 M 96 256 L 416 256 M 142 142 L 370 370 M 142 370 L 370 142" stroke="url(#cyanGlow)" stroke-width="4" stroke-opacity="0.8" filter="url(#glow)" />
+
+  <!-- Network Nodes -->
+  <circle cx="256" cy="96" r="14" fill="#38bdf8" />
+  <circle cx="256" cy="416" r="14" fill="#38bdf8" />
+  <circle cx="96" cy="256" r="14" fill="#38bdf8" />
+  <circle cx="416" cy="256" r="14" fill="#38bdf8" />
+  <circle cx="142" cy="142" r="12" fill="#818cf8" />
+  <circle cx="370" cy="370" r="12" fill="#818cf8" />
+  <circle cx="142" cy="370" r="12" fill="#818cf8" />
+  <circle cx="370" cy="142" r="12" fill="#818cf8" />
+
+  <!-- Central Glowing Hub Node -->
+  <circle cx="256" cy="256" r="36" fill="url(#cyanGlow)" filter="url(#glow)" />
+  <circle cx="256" cy="256" r="18" fill="#ffffff" />
+</svg>

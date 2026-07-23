@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { Check } from 'lucide-react';
 
 interface PasswordStrengthMeterProps {
   password: string;
@@ -22,17 +23,22 @@ export const PasswordStrengthMeter: React.FC<PasswordStrengthMeterProps> = ({
   const score = getScore(password);
 
   const getLabel = () => {
-    if (!password) return '';
-    if (score <= 1) return 'Weak';
-    if (score === 2) return 'Fair';
-    if (score === 3) return 'Good';
-    return 'Strong Password ✓';
+    if (!password) return null;
+    if (score <= 1) return <span className="text-rose-400">Weak</span>;
+    if (score === 2) return <span className="text-amber-400">Fair</span>;
+    if (score === 3) return <span className="text-cyan-400">Good</span>;
+    return (
+      <span className="text-emerald-400 inline-flex items-center gap-1">
+        <span>Strong</span>
+        <Check className="w-3 h-3 text-emerald-400" />
+      </span>
+    );
   };
 
   const getColor = () => {
     if (score <= 1) return 'bg-rose-500';
     if (score === 2) return 'bg-amber-500';
-    if (score === 3) return 'bg-blue-500';
+    if (score === 3) return 'bg-cyan-500';
     return 'bg-emerald-500';
   };
 
@@ -42,7 +48,7 @@ export const PasswordStrengthMeter: React.FC<PasswordStrengthMeterProps> = ({
     <div className="mt-2 space-y-1.5">
       <div className="flex justify-between text-[10px] font-mono font-medium text-zinc-500">
         <span>Password Complexity:</span>
-        <span className="font-bold text-zinc-900 dark:text-zinc-100">{getLabel()}</span>
+        <div className="font-bold">{getLabel()}</div>
       </div>
       <div className="grid grid-cols-4 gap-1.5 h-1.5">
         {[1, 2, 3, 4].map((step) => (

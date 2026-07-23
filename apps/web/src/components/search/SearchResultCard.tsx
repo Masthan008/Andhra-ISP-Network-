@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { ShieldCheck, ArrowRight, ExternalLink, Wifi } from 'lucide-react';
 import { SearchResultItem } from './searchIndexData';
 
 interface SearchResultCardProps {
@@ -17,14 +18,14 @@ export const SearchResultCard: React.FC<SearchResultCardProps> = ({ item }) => {
   };
 
   const handleViewDetails = () => {
-    window.location.href = `/isps/${item.slug}`;
+    window.location.href = `#smart-search`;
   };
 
   return (
     <div className="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
       <div className="flex items-start gap-4">
-        <div className="w-12 h-12 rounded-xl bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-2xl">
-          {item.logoEmoji}
+        <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400">
+          <Wifi className="w-6 h-6 text-cyan-400" />
         </div>
         <div>
           <div className="flex items-center gap-2">
@@ -32,8 +33,9 @@ export const SearchResultCard: React.FC<SearchResultCardProps> = ({ item }) => {
               {item.providerName}
             </h3>
             {item.isVerified && (
-              <span className="text-[10px] font-mono font-semibold text-emerald-600 bg-emerald-50 dark:bg-emerald-950 px-2 py-0.5 rounded">
-                VERIFIED PLACE ID
+              <span className="inline-flex items-center gap-1 text-[10px] font-mono font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-500/20 px-2 py-0.5 rounded">
+                <ShieldCheck className="w-3 h-3 text-emerald-400" />
+                <span>VERIFIED PLACE ID</span>
               </span>
             )}
           </div>
@@ -57,16 +59,18 @@ export const SearchResultCard: React.FC<SearchResultCardProps> = ({ item }) => {
         <button
           type="button"
           onClick={handleViewDetails}
-          className="flex-1 md:flex-none h-10 px-5 rounded-xl bg-zinc-950 hover:bg-zinc-800 dark:bg-zinc-50 dark:hover:bg-zinc-200 text-zinc-50 dark:text-zinc-950 text-xs font-semibold transition-all shadow-sm active:scale-95"
+          className="flex-1 md:flex-none inline-flex items-center justify-center gap-1.5 h-10 px-5 rounded-xl bg-zinc-950 hover:bg-zinc-800 dark:bg-zinc-50 dark:hover:bg-zinc-200 text-zinc-50 dark:text-zinc-950 text-xs font-semibold transition-all shadow-sm active:scale-95"
         >
-          View Details ➔
+          <span>View Details</span>
+          <ArrowRight className="w-3.5 h-3.5" />
         </button>
         <button
           type="button"
           onClick={handleOpenGoogleMaps}
-          className="h-10 px-4 rounded-xl bg-white hover:bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-semibold transition-all"
+          className="inline-flex items-center justify-center gap-1.5 h-10 px-4 rounded-xl bg-white hover:bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-semibold transition-all"
         >
-          Google Maps ↗
+          <span>Maps</span>
+          <ExternalLink className="w-3.5 h-3.5 text-cyan-400" />
         </button>
       </div>
     </div>

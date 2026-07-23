@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { CheckCircle2, AlertCircle, AlertTriangle, Info, X } from 'lucide-react';
 
 export type NoticeType = 'success' | 'error' | 'warning' | 'info';
 
@@ -29,17 +30,17 @@ export const AuthBannerNotice: React.FC<AuthBannerNoticeProps> = ({
     }
   };
 
-  const getIcon = () => {
+  const renderIcon = () => {
     switch (type) {
       case 'success':
-        return '✓';
+        return <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />;
       case 'error':
-        return '✕';
+        return <AlertCircle className="w-4 h-4 text-rose-500 shrink-0" />;
       case 'warning':
-        return '⚠️';
+        return <AlertTriangle className="w-4 h-4 text-amber-500 shrink-0" />;
       case 'info':
       default:
-        return 'ℹ️';
+        return <Info className="w-4 h-4 text-cyan-500 shrink-0" />;
     }
   };
 
@@ -48,16 +49,16 @@ export const AuthBannerNotice: React.FC<AuthBannerNoticeProps> = ({
       className={`p-3.5 rounded-xl border text-xs font-medium flex items-center justify-between gap-3 ${getStyles()}`}
     >
       <div className="flex items-center gap-2">
-        <span className="font-bold">{getIcon()}</span>
+        {renderIcon()}
         <span>{message}</span>
       </div>
       {onClose && (
         <button
           type="button"
           onClick={onClose}
-          className="font-bold opacity-60 hover:opacity-100"
+          className="opacity-60 hover:opacity-100 transition-opacity"
         >
-          ✕
+          <X className="w-3.5 h-3.5" />
         </button>
       )}
     </div>

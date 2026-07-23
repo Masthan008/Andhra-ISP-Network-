@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { X, ArrowRight, ExternalLink } from 'lucide-react';
 import { DistrictData } from './apDistrictsData';
 
 interface FloatingDistrictPanelProps {
@@ -23,7 +24,7 @@ export const FloatingDistrictPanel: React.FC<FloatingDistrictPanelProps> = ({
   };
 
   const handleOpenDistrictPage = () => {
-    window.location.href = `/ap/${district.slug}`;
+    window.location.href = `#smart-search`;
   };
 
   return (
@@ -31,7 +32,7 @@ export const FloatingDistrictPanel: React.FC<FloatingDistrictPanelProps> = ({
       {/* Panel Header */}
       <div className="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-4">
         <div>
-          <span className="text-[10px] font-mono font-semibold tracking-wider text-emerald-600 dark:text-emerald-400 uppercase">
+          <span className="text-[10px] font-mono font-semibold tracking-wider text-cyan-400 uppercase">
             DISTRICT EXPLORER
           </span>
           <h3 className="text-xl font-bold text-zinc-950 dark:text-zinc-50">
@@ -42,9 +43,9 @@ export const FloatingDistrictPanel: React.FC<FloatingDistrictPanelProps> = ({
         <button
           type="button"
           onClick={onClose}
-          className="w-8 h-8 rounded-full bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 flex items-center justify-center text-zinc-500 font-bold transition-colors"
+          className="w-8 h-8 rounded-full bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 flex items-center justify-center text-zinc-500 transition-colors"
         >
-          ✕
+          <X className="w-4 h-4" />
         </button>
       </div>
 
@@ -52,11 +53,11 @@ export const FloatingDistrictPanel: React.FC<FloatingDistrictPanelProps> = ({
       <div className="py-4 border-b border-zinc-100 dark:border-zinc-800">
         <div className="flex justify-between text-xs font-semibold mb-1.5">
           <span className="text-zinc-600 dark:text-zinc-400">Broadband Coverage Reach</span>
-          <span className="font-mono text-emerald-600">{district.coveragePercent}%</span>
+          <span className="font-mono text-cyan-400">{district.coveragePercent}%</span>
         </div>
         <div className="w-full h-2 rounded-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden">
           <div
-            className="h-full bg-emerald-500 rounded-full transition-all duration-500"
+            className="h-full bg-cyan-400 rounded-full transition-all duration-500"
             style={{ width: `${district.coveragePercent}%` }}
           />
         </div>
@@ -104,16 +105,18 @@ export const FloatingDistrictPanel: React.FC<FloatingDistrictPanelProps> = ({
         <button
           type="button"
           onClick={handleOpenDistrictPage}
-          className="flex-1 h-11 rounded-xl bg-zinc-950 hover:bg-zinc-800 dark:bg-zinc-50 dark:hover:bg-zinc-200 text-zinc-50 dark:text-zinc-950 text-xs font-semibold transition-all shadow-md active:scale-95"
+          className="flex-1 inline-flex items-center justify-center gap-1.5 h-11 rounded-xl bg-zinc-950 hover:bg-zinc-800 dark:bg-zinc-50 dark:hover:bg-zinc-200 text-zinc-50 dark:text-zinc-950 text-xs font-semibold transition-all shadow-md active:scale-95"
         >
-          View District Page ➔
+          <span>Search District</span>
+          <ArrowRight className="w-3.5 h-3.5" />
         </button>
         <button
           type="button"
           onClick={handleOpenGoogleMaps}
-          className="h-11 px-4 rounded-xl bg-white hover:bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-semibold transition-all"
+          className="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-white hover:bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs font-semibold transition-all"
         >
-          Google Maps ↗
+          <span>Maps</span>
+          <ExternalLink className="w-3.5 h-3.5 text-cyan-400" />
         </button>
       </div>
     </div>

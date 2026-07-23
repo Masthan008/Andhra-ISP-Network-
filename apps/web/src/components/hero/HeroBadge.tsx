@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { Zap } from 'lucide-react';
 
 interface HeroBadgeProps {
   text?: string;
@@ -8,7 +9,7 @@ interface HeroBadgeProps {
 }
 
 export const HeroBadge: React.FC<HeroBadgeProps> = ({
-  text = '⚡ CONNECTING EVERY CORNER OF ANDHRA PRADESH',
+  text = 'CONNECTING EVERY CORNER OF ANDHRA PRADESH',
   className = '',
 }) => {
   return (
@@ -16,6 +17,7 @@ export const HeroBadge: React.FC<HeroBadgeProps> = ({
       data-hero-badge
       className={`inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/80 px-4 py-1.5 text-xs font-medium tracking-wide text-zinc-900 shadow-sm backdrop-blur-md transition-all hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/80 dark:text-zinc-100 ${className}`}
     >
+      <Zap className="w-3.5 h-3.5 text-cyan-400 fill-cyan-400" />
       <span className="relative flex h-2 w-2">
         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
         <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>

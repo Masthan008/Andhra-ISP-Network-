@@ -1,13 +1,14 @@
 'use client';
 
 import React from 'react';
+import { Globe } from 'lucide-react';
 
 interface Section7MapPrepProps {
   onLaunchMap?: () => void;
 }
 
 export const Section7MapPrep: React.FC<Section7MapPrepProps> = ({
-  onLaunchMap = () => (window.location.href = '/ap/explorer'),
+  onLaunchMap = () => (window.location.href = '#explorer'),
 }) => {
   return (
     <section
@@ -21,7 +22,7 @@ export const Section7MapPrep: React.FC<Section7MapPrepProps> = ({
       >
         <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
 
-        <span className="relative z-10 text-xs font-mono font-semibold tracking-wider text-emerald-400 uppercase px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800">
+        <span className="relative z-10 text-xs font-mono font-semibold tracking-wider text-cyan-400 uppercase px-3.5 py-1.5 rounded-full bg-slate-900 border border-cyan-500/20">
           SECTION 07 — SPATIAL EXPLORER
         </span>
 
@@ -39,7 +40,7 @@ export const Section7MapPrep: React.FC<Section7MapPrepProps> = ({
           className="relative z-10 inline-flex items-center gap-2.5 h-14 px-8 rounded-2xl bg-white hover:bg-zinc-100 text-zinc-950 font-bold text-base transition-all shadow-lg active:scale-95 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-zinc-950"
         >
           <span>Launch Interactive Map Explorer</span>
-          <span className="text-lg">🌐</span>
+          <Globe className="w-5 h-5 text-cyan-500" />
         </button>
       </div>
     </section>
