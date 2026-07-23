@@ -1,3 +1,8 @@
 # @andhra-isp/maps
 
-Geographic PostGIS & Vector SVG map utilities for Andhra ISP Network.
+PostGIS coordinate utilities, distance calculations, bounding box & marker helpers for Andhra ISP Network.
+
+## Usage
+```ts
+import { getMapsInfo } from '@andhra-isp/maps';
+```

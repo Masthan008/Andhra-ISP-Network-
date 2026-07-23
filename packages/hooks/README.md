@@ -1,3 +1,8 @@
 # @andhra-isp/hooks
 
-Shared React custom hooks library for Andhra ISP Network.
+Shared custom React hooks (useDebounce, useLocalStorage, useMediaQuery, etc.) for Andhra ISP Network.
+
+## Usage
+```ts
+import { getHooksInfo } from '@andhra-isp/hooks';
+```

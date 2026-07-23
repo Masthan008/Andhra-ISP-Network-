@@ -1,3 +1,8 @@
 # @andhra-isp/forms
 
-React Hook Form + Zod form validation helpers for Andhra ISP Network.
+React Hook Form + Zod schema validation helpers and accessible form wrappers for Andhra ISP Network.
+
+## Usage
+```ts
+import { getFormsInfo } from '@andhra-isp/forms';
+```

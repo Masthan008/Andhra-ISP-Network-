@@ -1,3 +1,8 @@
 # @andhra-isp/constants
 
-Enterprise application constants, feature flags, routes, and roles for Andhra ISP Network.
+Routes, permissions, roles, HTTP status, feature flags, cache and storage keys for Andhra ISP Network.
+
+## Usage
+```ts
+import { getConstantsInfo } from '@andhra-isp/constants';
+```

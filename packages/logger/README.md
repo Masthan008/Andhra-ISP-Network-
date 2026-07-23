@@ -1,3 +1,8 @@
 # @andhra-isp/logger
 
-Logger interface, log formatters & audit log types for Andhra ISP Network.
+Structured Logger, HTTP logger, exception logger, performance and audit logger for Andhra ISP Network.
+
+## Usage
+```ts
+import { getLoggerInfo } from '@andhra-isp/logger';
+```

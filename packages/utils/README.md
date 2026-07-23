@@ -1,3 +1,8 @@
 # @andhra-isp/utils
 
-Shared utility functions (formatting, date, storage, URL helpers) for Andhra ISP Network.
+Formatting, Date, Time, Storage, URL, Currency, Array, and Object helper utilities for Andhra ISP Network.
+
+## Usage
+```ts
+import { getUtilsInfo } from '@andhra-isp/utils';
+```

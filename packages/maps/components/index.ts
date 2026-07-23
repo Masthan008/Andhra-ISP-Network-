@@ -1,0 +1,1 @@
+export const MapsComponentMarker = "maps";
