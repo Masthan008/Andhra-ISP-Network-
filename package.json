@@ -1,10 +1,20 @@
 {
   "name": "andhra-isp-network-monorepo",
-  "version": "1.0.0",
+  "version": "1.0.0-enterprise",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "npm --prefix apps/web run dev",
+    "dev:all": "turbo run dev",
     "build": "npm --prefix apps/web run build",
-    "start": "npm --prefix apps/web run start"
+    "build:all": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
   }
 }
