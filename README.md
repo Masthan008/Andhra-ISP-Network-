@@ -36,7 +36,7 @@ By bridging citizens, local internet service providers (LCOs/MSOs), state infras
 
 ## 📚 Master Architecture Specifications Index
 
-The repository houses **39 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, operational workflow, 10-year strategic roadmap, disaster recovery framework, incident response governance, and documentation-as-code platform:
+The repository houses **40 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, operational workflow, 10-year strategic roadmap, disaster recovery framework, incident response governance, documentation-as-code platform, and learning/onboarding architecture:
 
 | # | Master Specification Document | Classification & Focus Area |
 |---|---|---|
@@ -79,6 +79,7 @@ The repository houses **39 exhaustive enterprise architecture masterpieces** det
 | 37 | [Master Disaster Recovery & Business Continuity](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_DISASTER_RECOVERY_BUSINESS_CONTINUITY_ARCHITECTURE.md) | Tier 1 RTO < 15m, Multi-AZ Failover, WORM Vaults & 16 Playbooks |
 | 38 | [Master Incident Management & Reliability Governance](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_INCIDENT_MANAGEMENT_SERVICE_RELIABILITY_ARCHITECTURE.md) | P0-P3 Severity Taxonomy, ICS War Room & Blameless RCA |
 | 39 | [Master Documentation & Knowledge Management](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_DOCUMENTATION_KNOWLEDGE_MANAGEMENT_ARCHITECTURE.md) | Docs-as-Code, 16 Domain Taxonomy, 10-Stage Lifecycle & ADRs |
+| 40 | [Master Learning, Training & Onboarding](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_LEARNING_ONBOARDING_ENABLEMENT_ARCHITECTURE.md) | 14 Role Curricula, Day 1-90 Onboarding & 4-Tier Certification |
 
 ---
 
@@ -167,7 +168,7 @@ Andhra-ISP-Network/
 │       ├── package.json                    # Web workspace dependencies
 │       ├── tsconfig.json                   # TypeScript configuration
 │       └── vite.config.ts                  # Vite engine build configuration
-├── ANDHRA_ISP_NETWORK_*.md                 # 39 Architecture Masterpiece Specifications
+├── ANDHRA_ISP_NETWORK_*.md                 # 40 Architecture Masterpiece Specifications
 ├── package.json                            # Root Monorepo configuration
 └── README.md                               # Platform Master README Documentation
 ```
