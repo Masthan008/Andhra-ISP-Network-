@@ -1,9 +1,10 @@
 import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
 import { HealthModule } from './health/health.module';
+import { InfrastructureModule } from './infrastructure/infrastructure.module';
 import { RequestIdMiddleware } from './common/middleware/request-id.middleware';
 
 @Module({
-  imports: [HealthModule],
+  imports: [InfrastructureModule, HealthModule],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
