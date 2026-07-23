@@ -1,7 +1,7 @@
-import type { Metadata } from 'next';
+import React from 'react';
 import './globals.css';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Andhra ISP Network — Connecting Every Corner of Andhra Pradesh',
   description: 'Discover broadband internet providers across 26 Districts, 679 Mandals, and 17,000+ Villages in Andhra Pradesh.',
 };
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased font-sans bg-white dark:bg-zinc-950 text-zinc-950 dark:text-zinc-50">
+      <body className="antialiased font-sans bg-slate-950 text-slate-100">
         {children}
       </body>
     </html>
