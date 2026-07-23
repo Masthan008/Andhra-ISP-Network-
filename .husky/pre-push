@@ -1,0 +1,16 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "============================================================"
+echo "⚡ ANDHRA ISP NETWORK — PRE-PUSH HOOK"
+echo "============================================================"
+
+echo "🚀 Running Master Build Verification before Push..."
+npm run build:all
+
+if [ $? -ne 0 ]; then
+  echo "❌ Master build failed. Push aborted."
+  exit 1
+fi
+
+echo "✅ Pre-push verification passed cleanly."

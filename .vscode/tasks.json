@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Launch Web App (npm run dev)",
+      "command": "npm run dev",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Run Developer CLI (npm run cli)",
+      "command": "npm run cli",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Run Developer Dashboard (npm run dashboard)",
+      "command": "npm run dashboard",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Run Master Workspace Validation (npm run validate)",
+      "command": "npm run validate",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Run Workspace Repair (npm run repair)",
+      "command": "npm run repair",
+      "problemMatcher": []
+    }
+  ]
+}

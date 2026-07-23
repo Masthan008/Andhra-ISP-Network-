@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug NestJS API Gateway (apps/api)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "apps/api", "run", "start:dev"],
+      "console": "integratedTerminal",
+      "restart": true
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Next.js / Vite Web App (apps/web)",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceRoot}/apps/web"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Jest Test Suite",
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "args": ["--runInBand"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

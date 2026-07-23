@@ -1,0 +1,16 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "============================================================"
+echo "⚡ ANDHRA ISP NETWORK — PRE-COMMIT HOOK"
+echo "============================================================"
+
+# Run workspace validator before committing
+node scripts/validate.js
+
+if [ $? -ne 0 ]; then
+  echo "❌ Pre-commit validation failed. Please fix issues before committing."
+  exit 1
+fi
+
+echo "✅ Pre-commit validation passed."

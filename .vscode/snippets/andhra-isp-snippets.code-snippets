@@ -1,0 +1,47 @@
+{
+  "React Accessible Component": {
+    "prefix": "apcomp",
+    "body": [
+      "'use client';",
+      "",
+      "import React from 'react';",
+      "",
+      "export interface ${1:ComponentName}Props {",
+      "  className?: string;",
+      "}",
+      "",
+      "export const ${1:ComponentName}: React.FC<${1:ComponentName}Props> = ({ className = '' }) => {",
+      "  return (",
+      "    <div data-${1/(.*)/${1:/downcase}/} className={`p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 ${className}`}>",
+      "      <span className=\"text-xs font-mono font-semibold text-cyan-400\">ANDHRA ISP NETWORK</span>",
+      "      <h2>${1:ComponentName}</h2>",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "Scaffold accessible React UI Component with Andhra ISP design tokens"
+  },
+  "NestJS Controller": {
+    "prefix": "apctrl",
+    "body": [
+      "import { Controller, Get, Param } from '@nestjs/common';",
+      "import { ApiTags, ApiOperation } from '@nestjs/swagger';",
+      "import { ${1:ModuleName}Service } from './${1/(.*)/${1:/downcase}/}.service';",
+      "",
+      "@ApiTags('${1:ModuleName}')",
+      "@Controller('${1/(.*)/${1:/downcase}/}')",
+      "export class ${1:ModuleName}Controller {",
+      "  constructor(private readonly ${1/(.*)/${1:/downcase}/}Service: ${1:ModuleName}Service) {}",
+      "",
+      "  @Get()",
+      "  @ApiOperation({ summary: 'Get all ${1/(.*)/${1:/downcase}/} records' })",
+      "  async findAll() {",
+      "    return this.${1/(.*)/${1:/downcase}/}Service.findAll();",
+      "  }",
+      "}"
+    ],
+    "description": "Scaffold NestJS OpenAPI controller with Swagger annotations"
+  }
+}
