@@ -1,5 +1,5 @@
 # ANDHRA ISP NETWORK 🌐
-### *Connecting Every Corner of Andhra Pradesh — and Beyond*
+### *Connecting Every Corner of Andhra Pradesh — and Evolving into India's Digital Backbone*
 
 [![Production Status](https://img.shields.io/badge/status-production--ready-brightgreen.svg?style=for-the-badge)](https://github.com/Masthan008/Andhra-ISP-Network-)
 [![React Version](https://img.shields.io/badge/React-18.3.1-blue.svg?style=for-the-badge&logo=react)](https://react.dev/)
@@ -13,7 +13,7 @@
 
 ## 📌 Executive Summary & Platform Vision
 
-**Andhra ISP Network** is an enterprise-grade digital connectivity and Internet Service Provider (ISP) discovery platform engineered to map, index, and optimize broadband infrastructure across all **26 districts, 679 mandals, and thousands of villages in Andhra Pradesh**.
+**Andhra ISP Network** is an enterprise-grade digital connectivity and Internet Service Provider (ISP) discovery platform engineered to map, index, and optimize broadband infrastructure across all **26 districts, 679 mandals, and thousands of villages in Andhra Pradesh** — designed to scale into India's premier nationwide Digital Public Infrastructure (DPI) layer.
 
 By bridging citizens, local internet service providers (LCOs/MSOs), state infrastructure authorities (AP FiberNet), and enterprise telecom operators, the platform delivers real-time ISP discovery, interactive spatial GIS vector mapping, automated AI verification workflows, and zero-trust security.
 
@@ -36,7 +36,7 @@ By bridging citizens, local internet service providers (LCOs/MSOs), state infras
 
 ## 📚 Master Architecture Specifications Index
 
-The repository houses **35 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, and operational workflow:
+The repository houses **36 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, operational workflow, and 10-year strategic roadmap:
 
 | # | Master Specification Document | Classification & Focus Area |
 |---|---|---|
@@ -75,6 +75,7 @@ The repository houses **35 exhaustive enterprise architecture masterpieces** det
 | 33 | [Master Release Engineering & CI/CD](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_RELEASE_ENGINEERING_CICD_DEPLOYMENT_ARCHITECTURE.md) | Trunk-Based Git, Cosign OCI Signing, Blue/Green & Canary |
 | 34 | [Master Platform Evolution & Future Strategy](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_PLATFORM_EVOLUTION_SCALABILITY_FUTURE_ARCHITECTURE.md) | 5-Year Roadmap, India National Expansion & FinOps |
 | 35 | [Master Digital Transformation Architecture](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_DIGITAL_TRANSFORMATION_TECHNOLOGY_GOVERNANCE_ARCHITECTURE.md) | Enterprise Operating Model, 5-Level Maturity & ARB Governance |
+| 36 | [Master Vision & 10-Year Blueprint](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_VISION_STRATEGIC_ROADMAP_10YEAR_BLUEPRINT.md) | 10-Year Phased Horizon & Digital Public Infrastructure (DPI) |
 
 ---
 
@@ -163,7 +164,7 @@ Andhra-ISP-Network/
 │       ├── package.json                    # Web workspace dependencies
 │       ├── tsconfig.json                   # TypeScript configuration
 │       └── vite.config.ts                  # Vite engine build configuration
-├── ANDHRA_ISP_NETWORK_*.md                 # 35 Architecture Masterpiece Specifications
+├── ANDHRA_ISP_NETWORK_*.md                 # 36 Architecture Masterpiece Specifications
 ├── package.json                            # Root Monorepo configuration
 └── README.md                               # Platform Master README Documentation
 ```
@@ -257,4 +258,4 @@ We welcome community and enterprise contributions! Please review our workflow:
 Built with ❤️ by the **Andhra ISP Network Engineering Team**.  
 Licensed under the **MIT License** — see the `LICENSE` file for details.
 
-*Connecting Every Corner of Andhra Pradesh.* 🇮🇳
+*Connecting Every Corner of Andhra Pradesh — and Evolving into India's Digital Backbone.* 🇮🇳
