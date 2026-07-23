@@ -36,7 +36,7 @@ By bridging citizens, local internet service providers (LCOs/MSOs), state infras
 
 ## 📚 Master Architecture Specifications Index
 
-The repository houses **37 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, operational workflow, 10-year strategic roadmap, and disaster recovery framework:
+The repository houses **38 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, operational workflow, 10-year strategic roadmap, disaster recovery framework, and incident response governance:
 
 | # | Master Specification Document | Classification & Focus Area |
 |---|---|---|
@@ -77,6 +77,7 @@ The repository houses **37 exhaustive enterprise architecture masterpieces** det
 | 35 | [Master Digital Transformation Architecture](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_DIGITAL_TRANSFORMATION_TECHNOLOGY_GOVERNANCE_ARCHITECTURE.md) | Enterprise Operating Model, 5-Level Maturity & ARB Governance |
 | 36 | [Master Vision & 10-Year Blueprint](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_VISION_STRATEGIC_ROADMAP_10YEAR_BLUEPRINT.md) | 10-Year Phased Horizon & Digital Public Infrastructure (DPI) |
 | 37 | [Master Disaster Recovery & Business Continuity](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_DISASTER_RECOVERY_BUSINESS_CONTINUITY_ARCHITECTURE.md) | Tier 1 RTO < 15m, Multi-AZ Failover, WORM Vaults & 16 Playbooks |
+| 38 | [Master Incident Management & Reliability Governance](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_INCIDENT_MANAGEMENT_SERVICE_RELIABILITY_ARCHITECTURE.md) | P0-P3 Severity Taxonomy, ICS War Room & Blameless RCA |
 
 ---
 
@@ -106,7 +107,7 @@ The frontend (`apps/web/src/components/`) implements **7 state-of-the-art visual
    * Animated optical fiber particle node graph ([NetworkCanvas.tsx](file:///c:/valli/Andhra%20ISP%20Network/apps/web/src/components/network/NetworkCanvas.tsx))
    * Interactive hub inspection cards ([FloatingHubCard.tsx](file:///c:/valli/Andhra%20ISP%20Network/apps/web/src/components/network/FloatingHubCard.tsx))
 
-5. **Smart ISP Discovery & Spotlight Search (`src/components/search/`):**
+5. **Smart ISP Discovery & Search Experience (`src/components/search/`):**
    * Keyboard-shortcut (`Cmd+K` / `Ctrl+K`) Spotlight search bar ([SpotlightSearchBar.tsx](file:///c:/valli/Andhra%20ISP%20Network/apps/web/src/components/search/SpotlightSearchBar.tsx))
    * One-click district search filters ([QuickSearchChips.tsx](file:///c:/valli/Andhra%20ISP%20Network/apps/web/src/components/search/QuickSearchChips.tsx))
    * Rich ISP result cards with verified badges & plan details ([SearchResultCard.tsx](file:///c:/valli/Andhra%20ISP%20Network/apps/web/src/components/search/SearchResultCard.tsx))
@@ -165,7 +166,7 @@ Andhra-ISP-Network/
 │       ├── package.json                    # Web workspace dependencies
 │       ├── tsconfig.json                   # TypeScript configuration
 │       └── vite.config.ts                  # Vite engine build configuration
-├── ANDHRA_ISP_NETWORK_*.md                 # 37 Architecture Masterpiece Specifications
+├── ANDHRA_ISP_NETWORK_*.md                 # 38 Architecture Masterpiece Specifications
 ├── package.json                            # Root Monorepo configuration
 └── README.md                               # Platform Master README Documentation
 ```
