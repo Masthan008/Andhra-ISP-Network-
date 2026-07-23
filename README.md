@@ -36,7 +36,7 @@ By bridging citizens, local internet service providers (LCOs/MSOs), state infras
 
 ## 📚 Master Architecture Specifications Index
 
-The repository houses **36 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, operational workflow, and 10-year strategic roadmap:
+The repository houses **37 exhaustive enterprise architecture masterpieces** detailing every subsystem, API, database model, security rule, operational workflow, 10-year strategic roadmap, and disaster recovery framework:
 
 | # | Master Specification Document | Classification & Focus Area |
 |---|---|---|
@@ -76,6 +76,7 @@ The repository houses **36 exhaustive enterprise architecture masterpieces** det
 | 34 | [Master Platform Evolution & Future Strategy](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_PLATFORM_EVOLUTION_SCALABILITY_FUTURE_ARCHITECTURE.md) | 5-Year Roadmap, India National Expansion & FinOps |
 | 35 | [Master Digital Transformation Architecture](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_DIGITAL_TRANSFORMATION_TECHNOLOGY_GOVERNANCE_ARCHITECTURE.md) | Enterprise Operating Model, 5-Level Maturity & ARB Governance |
 | 36 | [Master Vision & 10-Year Blueprint](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_VISION_STRATEGIC_ROADMAP_10YEAR_BLUEPRINT.md) | 10-Year Phased Horizon & Digital Public Infrastructure (DPI) |
+| 37 | [Master Disaster Recovery & Business Continuity](file:///c:/valli/Andhra%20ISP%20Network/ANDHRA_ISP_NETWORK_ENTERPRISE_DISASTER_RECOVERY_BUSINESS_CONTINUITY_ARCHITECTURE.md) | Tier 1 RTO < 15m, Multi-AZ Failover, WORM Vaults & 16 Playbooks |
 
 ---
 
@@ -164,7 +165,7 @@ Andhra-ISP-Network/
 │       ├── package.json                    # Web workspace dependencies
 │       ├── tsconfig.json                   # TypeScript configuration
 │       └── vite.config.ts                  # Vite engine build configuration
-├── ANDHRA_ISP_NETWORK_*.md                 # 36 Architecture Masterpiece Specifications
+├── ANDHRA_ISP_NETWORK_*.md                 # 37 Architecture Masterpiece Specifications
 ├── package.json                            # Root Monorepo configuration
 └── README.md                               # Platform Master README Documentation
 ```
